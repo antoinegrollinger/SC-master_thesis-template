@@ -1,0 +1,166 @@
+% SC master thesis covers template
+\documentclass{SC-master-thesis-covers-EN}
+
+\usepackage{graphicx,wrapfig,lipsum}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{pdfpages}
+\usepackage{appendix}
+%\usepackage{biblatex}
+%\addbibresource{ref.bib}
+\usepackage[utf8x]{inputenc} % File coding uses utf8
+ \usepackage{comment}
+\usepackage{booktabs}
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily,
+  showstringspaces=false,
+  commentstyle=\color{red},
+  keywordstyle=\color{blue}
+}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{fancyvrb}
+\usepackage{circuitikz}
+\usepackage{amsmath} % Extra commands for math
+\usepackage{amssymb} % Math symbols  % Include images in LaTeX
+\usepackage{color} % Coloring text
+\usepackage{float} % Allow you to use [H] specifier to force the position of the images 
+\usepackage{pdfpages}
+\usepackage{capt-of} % Defines a command \captionof for putting a caption to something that’s not a float.
+\setlength{\parindent}{0pt}
+\usepackage{sidecap} % Defines environments called SCfigure and SCtable (analogous to figure and table) to typeset captions sideways
+\usepackage[squaren, Gray, cdot]{SIunits}
+        \sidecaptionvpos{figure}{c} % Alignment
+\usepackage{caption} % to customize the captions in floating environments like figure and table
+\usepackage{commath} % Mathematics typesetting support
+\usepackage{cancel} % Place lines through maths formulae
+\usepackage{anysize} % to set up document margins
+\marginsize{2cm}{2cm}{2cm}{2cm} % Left, right, up, down
+\usepackage{appendix} %Extra control of appendices
+\usepackage{url}
+
+% References as links with colors
+\usepackage[colorlinks=false,plainpages=true,citecolor=blue,linkcolor=blue]{hyperref}
+\usepackage{verbatim}
+\usepackage{caption}
+\usepackage{hyperref}
+% Header and Footer
+\usepackage{fancyhdr} 
+\usepackage{mwe}
+%\usepackage{subfig}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\footnotesize Geographical analysis of food delivery applications} 
+\fancyhead[R]{\footnotesize Faculté des Sciences}   
+\fancyfoot[R]{\footnotesize Master thesis}  
+\fancyfoot[C]{\thepage}
+\fancyfoot[L]{\footnotesize Antoine Grollinger}  %izquierda
+\renewcommand{\footrulewidth}{0.4pt}
+\fancypagestyle{firststyle}
+{
+   \fancyhf{}
+}
+
+\counterwithout{figure}{chapter}
+
+
+\newcommand\blankpage{
+    \null
+    \thispagestyle{empty}
+    \addtocounter{page}{-1}
+    \newpage}
+
+\usepackage{listings}
+\lstset{language=Python}
+\newcommand{\python}{\textit{Python}}
+
+% Please fill in the following boxes
+% Title of the thesis
+\title{Geographical analysis of food delivery applications}
+
+% Subtitle - remove this line if not applicable
+%\subtitle{Optional subtitle}
+
+% Name of the student author(s)
+\author{Antoine \textsc{Grollinger}}
+%\secondauthor{Firstname \textsc{Lastname}}		% remove if not applicable
+%\thirdauthor{Firstname \textsc{Lastname}}			% remove if not applicable
+
+% Official title of the master degree (copy/paste from list below)
+% Master [120] en biochimie et biologie moléculaire et cellulaire 
+% Master [120] en biologie des organismes et écologie 
+% Master [60] en sciences biologiques  
+% Master [120] en science des données, orientation statistique 
+% Master [120] en sciences actuarielles 
+% Master [120] en sciences chimiques  
+% Master [60] en sciences chimiques  
+% Master [120] en sciences géographiques, orientation climatologie  
+% Master [120] en sciences géographiques, orientation générale 
+% Master [60] en sciences géographiques, orientation générale % Master [120] en sciences mathématiques 
+% Master [60] en sciences mathématiques 
+% Master [120] en sciences physiques 
+% Master [60] en sciences physiques  
+% Master [120] en statistique, orientation biostatistiques  
+% Master [120] en statistique, orientation générale  
+
+\degreetitle{Master [120] en statistique, orientation générale}
+
+% Name of the supervisor(s)
+\supervisor{Catherine \textsc{Legrand}}
+%\secondsupervisor{Firstname \textsc{Lastname}}		% remove if not applicable
+%\thirdsupervisor{Firstname \textsc{Lastname}}		% remove if not applicable
+
+% Name of the reader(s)
+\readerone{Vincent \textsc{Smets}}
+\readertwo{Stefanie \textsc{Lastname}}			% remove if not applicable
+\readerthree{Firstname \textsc{Lastname}}			% remove if not applicable
+%\readerfour{Firstname \textsc{Lastname}}			% remove if not applicable
+%\readerfive{Firstname \textsc{Lastname}}			% remove if not applicable
+
+% Academic year (update if necessary)
+\years{2022--2023}
+
+% Document
+\begin{document}
+  % Front cover page
+  \maketitle
+  
+\blankpage
+
+\begin{abstract}
+
+Test
+
+
+\end{abstract}
+
+
+\section*{Acknowledgements}
+
+%\setcounter{page}{7}
+\newpage
+
+\tableofcontents
+%\addcontentsline{toc}{chapter}{List of figures}
+\listoffigures
+
+\chapter{Introduction}
+
+
+\bibliographystyle{bst/IEEEtran} 
+
+\addcontentsline{toc}{chapter}{Bibliography}
+\addcontentsline{toc}{chapter}{Appendix}
+\bibliography{bibliography}
+
+
+\appendix
+
+\chapter{Appendix 1} 
+
+\blankpage
+
+
+  % Back cover page
+  \backcoverpage
+
+\end{document}
